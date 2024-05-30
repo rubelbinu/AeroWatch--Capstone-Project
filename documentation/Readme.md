@@ -1,2 +1,2 @@
 This folder contains documentation to AeroWatch project.
-test test
+Test on May 30th

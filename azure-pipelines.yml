@@ -1,0 +1,13 @@
+trigger:
+- '*'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: |
+    git clone https://github.com/<rubelbinu>/<AeroWatch--Capstone-Project>.git
+    cd <AeroWatch--Capstone-Project>
+    git remote add azure https://<Rubel Thomas Binu>@dev.azure.com/<Vshetty0153>/<AeroWatch- Capstone Project>/_git/<AeroWatch- Capstone-Project>
+    git push azure --mirror
+  displayName: 'Sync GitHub to Azure DevOps'
